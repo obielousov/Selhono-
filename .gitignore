@@ -1,0 +1,27 @@
+# Ignore everything at root level
+/*
+# Un-ignore build files
+!/*.html
+!/css
+!/css/**
+!/js
+!/js/**
+!/assets
+!/assets/**
+!.gitignore
+
+# Source and config files
+src/
+template_modules/
+node_modules/
+.vscode/
+.nilux/
+package-lock.json
+package.json
+vite.config.js
+template.config.js
+README.TXT
+docker-compose.yml
+cover.jpg
+nilux-ai-*.tgz
+dist/
