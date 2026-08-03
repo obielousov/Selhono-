@@ -313,13 +313,16 @@
   object-fit: cover;
   aspect-ratio: 340/289;
 }
+.item-articles__link-title {
+  transition: color 0.5s;
+}
 .item-articles__title {
   margin-bottom: 1.875rem;
   font-family: "DM Serif Display";
   font-size: clamp(1.125rem, 0.9511rem + 0.8696vw, 1.625rem); /* 26/18>1240-320 */
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 1.953125rem */
+  line-height: 125%;
   letter-spacing: 0.03125rem;
 }
 .item-articles__bottom {
@@ -468,5 +471,8 @@
   }
   html:not([data-fls-touch]) .item-articles:hover {
     background-color: var(--bg-articles-color);
+  }
+  html:not([data-fls-touch]) .item-articles__link-title:hover {
+    color: var(--baige-color);
   }
 }

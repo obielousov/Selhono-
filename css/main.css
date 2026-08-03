@@ -245,12 +245,6 @@ body {
 [data-fls-header-scroll] .header__container {
   transition: padding-block 0.4s ease;
 }
-[data-fls-header-scroll].--header-scroll {
-  box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.08);
-}
-[data-fls-header-scroll].--header-scroll .header__container {
-  padding-block: 0.5rem;
-}
 
 [data-fls-header-scroll-show].--header-scroll {
   transition: translate 0.3s;
@@ -343,6 +337,13 @@ body {
   }
   .header__btn {
     order: 2;
+  }
+}@media (min-width: 62em){
+  [data-fls-header-scroll].--header-scroll {
+    box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.08);
+  }
+  [data-fls-header-scroll].--header-scroll .header__container {
+    padding-block: 0.5rem;
   }
 }@media (any-hover: hover), (pointer: fine){
   html:not([data-fls-touch]) .menu__link:hover {
